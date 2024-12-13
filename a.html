@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-areas: "head head head" 
+                             "side conten conten" 
+                             "foot foot foot";
+    }                   
+    header{
+        grid-area: head;
+        background-color: aqua;
+    }  
+    article{
+        grid-area: conten ;
+        background-color: azure;
+    } 
+    aside{
+        grid-area: side;
+        background-color: brown;
+    } 
+    footer{
+        grid-area: foot;
+        background-color: blue;
+    } 
+</style>
+<body>
+    <header>head</header>
+    <article>content</article>
+    <aside>side</aside>
+    <footer>footer</footer>
+</body>
+</html>
